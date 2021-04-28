@@ -5,7 +5,7 @@ Python script to recurse a given directory location and return a list of files w
 ## Implemented Functions:
 1. ```main()```: Checks the command line arguments for directory and regex, if no command line arguments were passed, uses current directory to list all files.
 
-2. ```get_files_by_regex()```: Takes directory to recursee and regex as arguments. Returns list of files whose name matches the regex in given directory.
+2. ```get_files_by_regex()```: Takes directory to recurse and regex as arguments. Returns list of files whose name matches the regex in given directory.
 
 ## Implemented Unit Tests:
 
