@@ -37,7 +37,7 @@ The command line arguments for get_files.py are as follows:
 Note: Pass regex in quotes, alternatively escape characters that are special to bash to get the match 
 
 ```
- python3 get_files/get_files.py -d /Users/sunithapriyadarshini/ -r 'CS\d+'
+python3 get_files/get_files.py -d . -r '.*.py'
 ```
 
 ### Running Unit Tests
