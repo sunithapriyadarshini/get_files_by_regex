@@ -55,7 +55,7 @@ Code Coverage![image](https://user-images.githubusercontent.com/39092484/1164783
 As shown in the above image, the code that is not covered are the one in main() function that checks the command line arguments passed. Unit test are written to run independtly and should not depend on arguments passed. This justifies the lines 47-56 not being covered by the unit tests.
 
 ### Execution Time
-Exceution timeto return file names for a given directory and regexx is as shown below:
+Exceution time to return file names for a given directory and regexx is as shown below:
 
 Exceution Time-1![image](https://user-images.githubusercontent.com/39092484/116480047-a2f7db00-a84e-11eb-833e-88e4bcba29e5.png)
 Exceution Time-2![image](https://user-images.githubusercontent.com/39092484/116480028-9a9fa000-a84e-11eb-9d02-1d84575fcde9.png)
