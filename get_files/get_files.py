@@ -24,12 +24,15 @@ def get_files_by_regex(input_dir, regex):
         print("Getting list of all files for directory " + input_dir + ":\n")
 
 
-    for dirpath, dirnames, filenames in os.walk(input_dir):
-        for f in filenames:
-            filepath = os.path.join(dirpath, f)
-            if re.match(regex, f):
-                print(filepath)
-                matched_files.append(filepath)
+    try:
+        for dirpath, dirnames, filenames in os.walk(input_dir):
+            for f in filenames:
+                filepath = os.path.join(dirpath, f)
+                if re.match(regex, f):
+                    print(filepath)
+                    matched_files.append(filepath)
+    except:
+    	print("Regex %s passed is not valid. " % regex + "Please pass a valid regex")
 
     return matched_files
 
