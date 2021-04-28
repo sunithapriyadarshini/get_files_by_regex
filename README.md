@@ -45,6 +45,14 @@ python3 get_files/get_files.py -d . -r '.*.py'
 python3 -m unittest test/get_files_test.py
 ```
 
+###Code coverage
+Code coverage for the script is at 72%
+
+Code Coverage![image](https://user-images.githubusercontent.com/39092484/116478382-f9174f00-a84b-11eb-8d17-463e6dc729d0.png)
+
+As shown in the above image, the code that is not covered are the one in main() function that checks the command line arguments passed. Unit test are written to run independtly and should not depend on arguments passed. This justifies the lines 47-56 not being covered by the unit tests.
+
+
 
 ## Authors
 
