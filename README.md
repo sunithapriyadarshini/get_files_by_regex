@@ -47,21 +47,21 @@ python3 get_files/get_files.py -d . -r '.*.py'
 python3 -m unittest test/get_files_test.py
 ```
 
-###Code coverage
+### Code coverage
 Code coverage for the script is at 72%
 
 Code Coverage![image](https://user-images.githubusercontent.com/39092484/116478382-f9174f00-a84b-11eb-8d17-463e6dc729d0.png)
 
 As shown in the above image, the code that is not covered are the one in main() function that checks the command line arguments passed. Unit test are written to run independtly and should not depend on arguments passed. This justifies the lines 47-56 not being covered by the unit tests.
 
-###Execution Time
+### Execution Time
 Exceution timeto return file names for a given directory and regexx is as shown below:
 
 Exceution Time-1![image](https://user-images.githubusercontent.com/39092484/116480047-a2f7db00-a84e-11eb-833e-88e4bcba29e5.png)
 Exceution Time-2![image](https://user-images.githubusercontent.com/39092484/116480028-9a9fa000-a84e-11eb-9d02-1d84575fcde9.png)
 
 
-Improve execution time:
+#### Improve execution time:
 * As seen in the above image, providing sub-directories results in faster search.
 * Use a dictionary to store filename and it's path. The dictionary can be saved as a pickle file. The next search for the filename will use the dictionary dumped in the pickle file and hence will be faster.
 
