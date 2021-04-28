@@ -55,6 +55,16 @@ class TestGetFiles(unittest.TestCase):
 
         self.assertEqual(len(regex_files), 0)
 
+    def test_get_not_valid_regex(self):
+        """ Tests get list of files for random regex.
+        """
+        temp_dir = tempfile.gettempdir()
+        random_regex = '**'
+        try:
+            get_files.get_files_by_regex(temp_dir, random_regex)
+        except:
+            pass
+
 
 if __name__ == '__main__':
     unittest.main()
